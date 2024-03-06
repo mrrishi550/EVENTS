@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="heading">HELLO</h1>
+    <ol id="Olist">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ol>
+    <script>
+      let list = document.getElementById("Olist");
+      list.addEventListener("click", function (e) {
+        console.log(e.target.textContent);
+        // let choose = e.target.textContent;
+        // document.innerHTML = choose;
+      });
+    </script>
+  </body>
+</html>
